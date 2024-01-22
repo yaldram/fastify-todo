@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "$id": "schema:dotenv",
+  "required": ["MONGO_URI"],
+  "properties": {
+    "NODE_ENV": {
+      "type": "string",
+      "default": "development"
+    },
+    "PORT": {
+      "type": "integer",
+      "default": 8000
+    },
+    "MONGO_URI": {
+      "type": "string"
+    },
+    "JWT_SECRET": {
+      "type": "string"
+    },
+    "JWT_EXPIRE_IN": {
+      "type": "string",
+      "default": "1h"
+    }
+  }
+}
